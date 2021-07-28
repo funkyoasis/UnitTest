@@ -8,15 +8,27 @@ namespace TestFirstExercises
         // implement this method so that it returns true if x is greater than or equal to y
         public static bool GreaterEqual(int x, int y)
         {
-            return false;
+            if (x >= y)
+
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+                    }
         }
 
-        // Implement this method so that it take a double as an input,
+       
+        // Implement this method so that it take an int as an input,
         // squares it, adds 101, divides the result by 7, then subtracts 4.  
         // Return a double rounded to 3 decimal places.
         public static double BODMAS(int inputNumber)
         {
-            return 0;
+            double y = Convert.ToDouble(inputNumber);
+            double x = ((((y * y) + 101 )/7.0 ) - 4);
+
+            return Math.Round(x,3);
         }
 
         // implement this method so that it returns true if num is even, otherwise false
