@@ -8,7 +8,7 @@ namespace TestFirstExercises_Tests
         [TestCase(5, 2, true)]
         [TestCase(2, 5, false)]
         [TestCase(5, 5, true)]
-        [TestCase(6, 10, true)]
+        [TestCase(6, 10, false)]
         public void GivenTwoNumbersXY_GreaterEqual_ReturnsWhetherXIsGreatorOrEqualToY(int x, int y, bool expResult)
         {
             Assert.That(Methods.GreaterEqual(x, y), Is.EqualTo(expResult));
@@ -16,6 +16,7 @@ namespace TestFirstExercises_Tests
 
         [TestCase(0, 10.429)]
         [TestCase(10, 24.714)]
+        [TestCase(7, 17.429)]
         public void GivenNumber_BODMAS_ReturnsTheExpectedResult(int num, double expResult)
         {
             Assert.That(Methods.BODMAS(num), Is.EqualTo(expResult));
